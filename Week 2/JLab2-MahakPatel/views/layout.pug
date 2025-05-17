@@ -1,0 +1,25 @@
+block variables
+doctype html
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  title #{title} | #{siteName}
+  link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap")
+  link(rel="stylesheet" href="/css/styles.css")
+body
+  header
+    .navbar
+      a.logo(href="/") #{siteName}
+      ul.nav-links
+        li
+          a(href="/") Home
+        li
+          a(href="/about") About
+  
+  main.main-content
+    block layout-content
+  
+  footer
+    .footer-content
+      p &copy; 2025 #{siteName}. All rights reserved.

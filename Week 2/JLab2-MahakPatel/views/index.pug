@@ -1,0 +1,19 @@
+extends layout
+
+block layout-content
+  h1.section-title Our Products
+  .product-grid
+    each product in products
+      .product-card
+        .product-image-container
+          img.product-image(
+            src=product.image 
+            alt=product.name
+            width="250"
+            height="160"
+          )
+        .product-info
+          h3.product-title= product.name
+          p.product-description= product.description
+          span.product-price $#{product.price.toFixed(2)}
+          button.add-to-cart Add to Cart
