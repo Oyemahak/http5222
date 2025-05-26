@@ -1,0 +1,7 @@
+nav(aria-label="Main navigation")
+  ul 
+    //- "link" is a temporary variable in the foreach loop
+    //- "links" is the array variable passed in from index.js
+    each link in links
+      //- If printing a variable as an attribute value, you do not use interpolation.
+      li: a(href=link.path) #{link.name}
