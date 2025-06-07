@@ -1,0 +1,13 @@
+extends common/layout
+
+block layout-content 
+  .main-content 
+    h1.page-title Movie List (Lab 4)
+
+    a.button(href="/update") Update Rating
+    a.button(href="/delete") Delete "R" Rated
+
+    each m in movies 
+      h2 #{m.title}
+      p Year: #{m.year}
+      p Rating: #{m.rating}

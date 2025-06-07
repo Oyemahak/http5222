@@ -1,0 +1,26 @@
+# Node modules (never push this)
+node_modules/
+
+# Environment variables (your secrets like DB URIs)
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code settings (optional)
+.vscode/
+
+# OS/macOS system files
+.DS_Store
+
+# Optional build folders (if using in future)
+dist/
+build/
+
+# Coverage reports (if testing added later)
+coverage/
+
+# Cache folders
+.cache/

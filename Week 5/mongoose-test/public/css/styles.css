@@ -1,0 +1,60 @@
+body {
+  color: #fff;
+  background-color: #1e1e1e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 2em;
+}
+
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+a.button, .button {
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin: 0.5em 0.5em 1em 0;
+  border-radius: 0.3em;
+  display: inline-block;
+}
+
+.button-group {
+  margin-bottom: 1.5em;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+}
+
+.movie-card {
+  background-color: #2e2e2e;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+p.year, p.rating {
+  color: #bbb;
+}
+
+p.notice {
+  background: #444;
+  padding: 1em;
+  border-left: 5px solid #ffd700;
+  font-style: italic;
+}
