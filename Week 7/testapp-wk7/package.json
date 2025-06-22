@@ -1,0 +1,21 @@
+{
+  "name": "testapp-trakt",
+  "version": "1.0.0",
+  "description": "Test application using Express and Node to test the Trakt REST API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --config bs-config.js"
+  },
+  "author": "Joanna Kommala",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

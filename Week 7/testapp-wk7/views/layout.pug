@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{title || "Trakt App"} - J Lab 5
+    link(rel="stylesheet", href="/styles.css")
+  body
+    header
+      h1 J Lab 5: Trakt API Explorer
+      nav
+        a(href="/") Home |
+        a(href="/anticipated") Anticipated Shows
+    main
+      block main-content
+    footer
+      p &copy; 2025 Mahak Patel - Full-Stack Web Dev

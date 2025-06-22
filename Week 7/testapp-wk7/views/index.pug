@@ -1,0 +1,11 @@
+extends layout
+
+block main-content
+  h2 Trending Movies
+
+  each m in movies
+    div.movie
+      h3
+        a(href=`/movie/${m.movie.ids.imdb}/studios`) #{m.movie.title} (#{m.movie.year})
+      if m.movie.images && m.movie.images.poster
+        img(src=`https:${m.movie.images.poster[0]}`, alt=`${m.movie.title} poster`, height="250")

@@ -1,0 +1,34 @@
+extends layout
+
+block main-content
+  h2 #{show.title} (#{show.year})
+
+  if show.tagline
+    h4 Tagline
+    p #{show.tagline}
+
+  if show.overview
+    h4 Overview
+    p #{show.overview}
+
+  if show.airs
+    h4 Airs
+    p #{show.airs.day}s at #{show.airs.time} (#{show.airs.timezone})
+
+  if show.network
+    h4 Network
+    p #{show.network} (#{show.country})
+
+  if show.status
+    h4 Status
+    p #{show.status}
+
+  if show.genres.length
+    h4 Genres
+    ul
+      each g in show.genres
+        li #{g}
+
+  if show.rating
+    h4 Rating
+    p #{show.rating}/10 — #{show.votes} votes

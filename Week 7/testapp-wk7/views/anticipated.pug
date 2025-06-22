@@ -1,0 +1,11 @@
+extends layout
+
+block main-content
+  h2 Most Anticipated Shows
+
+  ul
+    each s in shows
+      li
+        h3
+          a(href=`/show/${s.show.ids.slug}`) #{s.show.title} (#{s.show.year})
+        p Anticipation Count: #{s.list_count}

@@ -1,0 +1,11 @@
+extends layout
+
+block main-content
+  h2 Movie Studios
+
+  if studioList.length > 0
+    ul
+      each studio in studioList
+        li #{studio.name}
+  else
+    p No studio information available.
