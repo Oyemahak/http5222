@@ -1,0 +1,10 @@
+extends layout
+
+block main-content
+  - const name = branch.querySelector('name')?.textContent;
+  - const address = branch.querySelector('address')?.textContent;
+  - const phone = branch.querySelector('phoneNumber')?.textContent;
+
+  h1= name
+  p Address: #{address}
+  p Phone: #{phone}

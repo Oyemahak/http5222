@@ -1,0 +1,12 @@
+extends layout
+
+block main-content
+  h1 Libraries
+  each branch in libraries
+    - const id = branch.id;
+    - const name = branch.querySelector('name')?.textContent;
+    - const desc = branch.querySelector('description')?.textContent;
+    div
+      h2
+        a(href=`/library/${id}`)= name
+      p!= desc
